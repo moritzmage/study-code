@@ -4,7 +4,7 @@ int main(){
 
     int iBoardSize = 8;
 
-
+    /*
     do{
         printf("\nWie groß soll das Feld sein:\t");
         scanf("%d", &iBoardSize);
@@ -12,6 +12,7 @@ int main(){
             printf("\nUngueltiger Wert!!!\n");
         }
     } while((iBoardSize <= 0) || (iBoardSize>26));
+    */
 
     printf("    ");
     for(int c = 0; c < iBoardSize; c++){
