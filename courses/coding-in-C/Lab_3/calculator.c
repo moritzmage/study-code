@@ -53,7 +53,7 @@ int main(){
 float addition(float a, float b);
 float subtraction(float a, float b);
 float multiplication(float a, float b);
-float subtraction(float a, float b);
+float division(float a, float b);
 
 /*--------------------------------------------------------------------------------------------------------------------*/
 
@@ -65,23 +65,19 @@ int main() {
     printf("\nWert 1: ");
     if(scanf("%f\n", &fWertA) != 1) {
         printf("\nUngueltiger Wert!!!");
-        return 1;
     }
 
     printf("\nWert 2: ");
     if(scanf("%f\n", &fWertB) != 1) {
         printf("\nUngueltiger Wert!!!");
-        return 1;
     }
 
     printf("\nOperation: ");
     if(scanf("%c\n", &cOperator) != 1) {
         printf("\nUngueltiger Operator!!!");
-        return 1;
     }
     else if(cOperator != '+' && cOperator != '-' && cOperator != '*' && cOperator != '/') {
         printf("\nUngueltiger Operator!!!");
-        return 1;
     }
 
     switch(cOperator) {
