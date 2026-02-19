@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <string.h>
 
 /*-------------------------------------------------------------------------------*/
 
@@ -9,10 +10,10 @@ Section I:
 
     Types of following expressions:
     - x     - integer value
-    - p     - adress of p
+    - p     - adress of p (integer pointer)
     - *p    - integer value of x
-    - pp    - adress of pp
-    - *pp   - adress of p
+    - pp    - adress of pp (integer pointer)
+    - *pp   - adress of p (integer pointer)
     - **pp  - integer value of x 
 
 */
@@ -48,27 +49,29 @@ Section II:
 
 */
 
-/*
+
 int main(int argc, char **argv) {
     
     printf("\n\n");
 
-    for(int i=0; i<argc-1; i++) {
-        printf("%s", argv[i+1]);
-        printf(" ");
+    for(int i=1; i<argc; i++) {
+        printf("Argument %d at address '%p' has content: ", i, argv[i]);
+        printf("%s", argv[i]);
+        int length = strlen(argv[i])-1;
+        printf(" (length: %d)\n", length);
     }
 
     printf("\n\n");
 
     return 0;
 }
-*/
+
 
 /*-------------------------------------------------------------------------------*/
 
 //Section III:
 
-
+/*
 int main(void) {
     srand(time(NULL));
 
@@ -147,3 +150,4 @@ int main(void) {
 
     return 0;
 }
+*/
