@@ -12,7 +12,7 @@ int main(void) {
 
     // TODO: complete the output statements
     printf("x = %d\n", ???);
-    printf("x via p = %d\n", ???);
+    printf("x via p = %d\n",   ???);
     printf("x via pp = %d\n", ???);
 
     return 0;
