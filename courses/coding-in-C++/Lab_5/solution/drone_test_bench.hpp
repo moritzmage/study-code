@@ -37,4 +37,18 @@ void printFrame(T frame, int size)
     std::cout << frame[size - 1] << "]" << '\n';
 }
 
+template <typename T>
+T min(T frame, int size)
+{
+
+    T min = frame[0];
+    for (int i = 1; i < size; i++)
+    {
+        if (frame[i] < min)
+        {
+            min = frame[i];
+        }
+    }
+}
+
 #endif
