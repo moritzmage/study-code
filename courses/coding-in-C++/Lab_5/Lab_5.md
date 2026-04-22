@@ -200,20 +200,12 @@ Recorded data:
 
 ---
 
-## 🟡 Section III: Iterator-Based Processing
-
-To understand how STL works internally, you now operate directly on iterators.
-
----
-
 ### Task 8: Manual Iterator Walk
 
 #### Requirements
 
 - Create a `std::vector<int>` with some values of your choice
-- Loop over each element of the vector one by one using:
-   1. an explicit iterator 
-   2. a for-each loop
+- Loop over each element of the vector one by one using an explicit iterator 
 - Print all elements
 
 #### Questions
@@ -230,7 +222,7 @@ Answer as comments:
 
 ---
 
-## 🔴 Section IV: Drone Black Box Analyzer
+## 🔴 Section III: Drone Black Box Analyzer
 
 In this final task, you will combine the ideas from all previous sections into one larger program.
 
