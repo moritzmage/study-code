@@ -65,6 +65,12 @@ void Note::display()
 int main()
 {
     Note note1("Meine Nachricht");
+    // This assignment is possible even without a copy-constructor
+    // Your compiler creates a Default Copy Constructor which
+    // copies every member of object1 to object2.
+    // This is called shallow-copy.
+    // This approach can lead to unwanted issues
+    // especially when Pointers are involved
     Note note2 = note1;
 
     note1.display();
